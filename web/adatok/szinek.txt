@@ -1,0 +1,5 @@
+háttér színe: #2E86AB
+tető színe: #F4A340
+falak,gombok,szivecske színe: #FFF6E9
+ajtó,ablak színe: #2E86AB
+kémény színe: #E8862A
