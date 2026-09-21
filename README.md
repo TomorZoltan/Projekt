@@ -2,7 +2,7 @@
 
 
 ## A projektben résztvevők:
-Antal Dániel
+Antal Dániel\n
 Fülöp Péter
 Tömör Zoltán
 
