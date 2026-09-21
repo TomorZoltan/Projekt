@@ -2,9 +2,9 @@
 
 
 ## A projektben résztvevők:
-Antal Dániel\n
-Fülöp Péter
-Tömör Zoltán
+Antal Dániel  
+Fülöp Péter  
+Tömör Zoltán  
 
 ## A project leírása:
 Egy online piactér, amelyen keresztül magánszemélyek és vállalkozások adhatnak ki és foglalhatnak le rövid távú szállásokat.
