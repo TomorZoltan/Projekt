@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="hatter.css">
     <title>Szálláska</title>
 </head>
-<body>
+<body onload="main_betoltes()">
    
     <center><header class="header">
-       <img class="logo" src="./kepek/favicon.png" alt="Szálláska logója">
-       <p style="float: right;">felhasznalo</p>
+       <img class="logo" src="./kepek/favicon.png" alt="Szálláska logója" onclick="home_page_open()">
+       <p id="felhasznalo_profil">Bejelentkezes</p>
         <h1 class=header-h1>Szálláska</h1> 
     </header></center>
-    <main></main>
-    <footer>Antal Dániel,Fülöp Péter, Tömör Zoltán
+    <main id="main"></main>
+    <footer>Antal Dániel, Fülöp Péter, Tömör Zoltán
         <br>
         <p>A képek mestersége intelegenciával készültek</p>
     </footer>
-</body> 
+    <script src="script.js"></script>
+</body>
 </html>
