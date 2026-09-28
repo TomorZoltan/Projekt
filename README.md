@@ -50,3 +50,9 @@ lefoglalva boolean
 *szallasID* int  
 *felhasznaloID* int  
 fo int  
+
+
+### TODO
+- info 3 részre oszrása --> képek közeli megnézése
+- ár/lefoglalás kivágása, gomb csinálás
+- magyar/angol, eur/huf;

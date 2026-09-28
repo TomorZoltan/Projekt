@@ -4,7 +4,6 @@ let home_page = ` <div class="kep_felsorolas" onclick="house_load()">
     </div>`;
 let login_page = `<p>Buzi!<p>`;
 let profile_page = ``;
-const ar = 10;
 let house_page = `<img src="./kepek/elso szallas/elso_szallas_info.png" alt="1">` //1 oldal, változók cserélődnek
 const main = document.getElementById("main")
 
