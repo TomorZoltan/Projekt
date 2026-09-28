@@ -31,6 +31,7 @@ body {
     list-style-type: none;
     background-color: #266783;
     width: 31rem;
+    cursor: pointer;
 }
 .kep_felsorolas img{
     height: 20rem;

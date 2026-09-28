@@ -24,9 +24,9 @@ A foglalás a weboldalon történik és a megadott telefonszámon keresztül leh
   -  *Szállás adatai* - képek, neve, ár, helyszín, szolgáltatások
 - **Lábléc** - a készítők nevei, a képek forrássa
 ### Adatbázis
-Felhasznalo (**felhasznaloID**,nev,jelszo,telefonszam)  
-Szallas (**szallasID**,nev,ar,hely,kep,maxFo,lefoglalva,szolgaltatasok,*feltoltoID*)  
-Foglalas(**foglalasID**,*szallasID*,*felhasznaloID*,fo,datumtol,datumig)  
+Felhasznalo (**felhasznaloID**,nev,jelszo)  
+Szallas (**szallasID**,nev,ar,hely,kep,maxFo,lefoglalva,szolgaltatasok,*felhasznaloID*)  
+Foglalas(**foglalasID**,*szallasID*,*felhasznaloID*,fo)  
 
 ##### Felhasznalo
 **felhasznaloID** int  
@@ -53,6 +53,6 @@ fo int
 
 
 ### TODO
-- info 3 részre oszrása --> képek közeli megnézése
+- info 3 részre osztása --> képek közeli megnézése
 - ár/lefoglalás kivágása, gomb csinálás
 - magyar/angol, eur/huf;
