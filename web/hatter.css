@@ -45,3 +45,10 @@ body {
      margin: auto;
     padding: 10px;
 }
+#textbox{
+    border-radius: 50px;
+    background-color:#FFF6E9;
+    width: 50rem;
+    height: auto;
+    color: black;
+}
