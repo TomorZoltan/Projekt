@@ -37,13 +37,13 @@ const haz5 = {
 const hazak = [haz1,haz2]
 
 
-let home_page = ` <div class="kep_felsorolas" onclick="house_load()">
+let home_page = ` <div class="kep_felsorolas" onclick="house_load(this) id="0">
         <h3>Panorámás Apartman (Horvátország)</h3>
-        <img src="./kepek/elso szallas/haloszoba.png" alt="1">
+        <img src="./kepek/elso szallas/haloszoba.png">
     </div>
-    <div class="kep_felsorolas" onclick="house_load()">
+    <div class="kep_felsorolas" onclick="house_load(this) id="1">
         <h3>Panorámás Apartman (Horvátország)</h3>
-        <img src="./kepek/elso szallas/haloszoba.png" alt="1">
+        <img src="./kepek/elso szallas/haloszoba.png">
     </div>`;
 let login_page = `<div id="login_div">
     <h2>Bejelentkezés</h2>

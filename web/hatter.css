@@ -46,7 +46,10 @@ body {
     padding: 10px;
 }
 #textbox{
-    border-radius: 50px;
+    border-radius: 10px;
+    margin-left: 1rem;
+    padding: 0.5rem;
+
     background-color:#FFF6E9;
     width: 50rem;
     height: auto;
