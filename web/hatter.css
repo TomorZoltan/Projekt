@@ -33,6 +33,11 @@ body {
     width: 31rem;
     cursor: pointer;
 }
+     @media (max-width: 768px) {
+        .kep_felsorolas {
+            width: 24rem;
+        }
+    }
 .kep_felsorolas img{
     height: 20rem;
     max-width: 100%;
@@ -62,3 +67,18 @@ body {
     width: 8rem;
     color: black;
 }
+.kep_felsorolas img{
+    width: 90%
+}
+.szallas-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Alapértelmezésben 3 oszlop egymás mellett */
+        gap: 2rem; /* Térköz az elemek között */
+    }
+
+    /* Ha a képernyő keskenyebb, mint 768px (pl. mobiltelefon), akkor csak 1 oszlop legyen */
+    @media (max-width: 768px) {
+        .szallas-grid {
+            grid-template-columns: 1rem;
+        }
+    }

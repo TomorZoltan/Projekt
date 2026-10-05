@@ -34,17 +34,44 @@ const haz5 = {
     ar:24000
 };
 
-const hazak = [haz1,haz2]
+const hazak = [haz1,haz2,haz3,haz4,haz5]
 
 
-let home_page = ` <div class="kep_felsorolas" onclick="house_load(this) id="0">
+let home_page = ` <div class="szallas-grid">
+    <!-- 1. elem -->
+    <div class="kep_felsorolas" onclick="house_load(this)" id="0">
         <h3>Panorámás Apartman (Horvátország)</h3>
-        <img src="./kepek/elso szallas/haloszoba.png">
+        <img src="./kepek/elso szallas/haloszoba.png" alt="Panorámás Apartman" style="width: 100%; height: auto;">
     </div>
-    <div class="kep_felsorolas" onclick="house_load(this) id="1">
-        <h3>Panorámás Apartman (Horvátország)</h3>
-        <img src="./kepek/elso szallas/haloszoba.png">
-    </div>`;
+    
+    <!-- 2. elem -->
+    <div class="kep_felsorolas" onclick="house_load(this)" id="1">
+        <h3>Balaton-parti faház</h3>
+        <img src="./kepek/masodik szallas/haloszoba.png" alt="Balaton-parti faház" style="width: 100%; height: auto;">
+    </div>
+    
+    <!-- 3. elem -->
+    <div class="kep_felsorolas" onclick="house_load(this)" id="2">
+        <h3>Noszvaji hegyvidéki házikó</h3>
+        <img src="./kepek/harmadik szallas/haloszoba.png" alt="Noszvaji hegyvidéki házikó" style="width: 100%; height: auto;">
+    </div>
+    
+    <!-- 4. elem -->
+    <div class="kep_felsorolas" onclick="house_load(this)" id="3">
+        <h3>Őrségi faház a természet ölelésében</h3>
+        <img src="./kepek/negyedik szallas/haloszoba.png" alt="Őrségi faház" style="width: 100%; height: auto;">
+    </div>
+    
+    <!-- 5. elem -->
+    <div class="kep_felsorolas" onclick="house_load(this)" id="4">
+        <h3>Pécsi belvárosi apartman</h3>
+        <img src="./kepek/otodik szallas/halo.png" alt="Pécsi belvárosi apartman" style="width: 100%; height: auto;">
+    </div>
+</div>
+    
+    
+    `;
+    
 let login_page = `<div id="login_div">
     <h2>Bejelentkezés</h2>
     <p>Név</p>
@@ -61,9 +88,6 @@ let register_page = `<div id="login_div">
     <input type="text">
 </div>`;
 let profile_page = ``;
-let house_page = `<h2>${hazak[0].nev}<div id="price">${hazak[0].ar} Ft/éjszaka</div></h2> 
-        <img src="${hazak[0].kep}" alt="1">
-        <div id="textbox">${hazak[0].szoveg}</div>`
 const main = document.getElementById("main")
 
 function main_load() {
@@ -73,8 +97,11 @@ function main_load() {
 function login_load() {
     main.innerHTML = login_page;
 }
-function house_load() {
-    main.innerHTML = house_page;
+function house_load(object) {
+
+    main.innerHTML = `<h2>${hazak[object.id].nev}<div id="price">${hazak[object.id].ar} Ft/éjszaka</div></h2> 
+        <img src="${hazak[object.id].kep}" alt="1">
+        <div id="textbox">${hazak[object.id].szoveg}</div>`;
 }
 function register_load() {
     main.innerHTML = register_page;
