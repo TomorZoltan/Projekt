@@ -52,3 +52,10 @@ body {
     height: auto;
     color: black;
 }
+#price{
+    border-radius: 50px;
+    text-align: center;
+    background-color:#FFF6E9;
+    width: 8rem;
+    color: black;
+}

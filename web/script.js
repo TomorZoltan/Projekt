@@ -3,10 +3,17 @@ const haz1 = {
     szoveg:"asd",
     fo:3,
     kep:"./kepek/elso szallas/elso_szallas_info_kepek.png",
-    ar:13124
+    ar:33000
+};
+const haz2 = {
+    nev:"Panorámás apartman",
+    szoveg:"asd",
+    fo:3,
+    kep:"./kepek/elso szallas/elso_szallas_info_kepek.png",
+    ar:33000
 };
 
-const hazak = [haz1]
+const hazak = [haz1,haz2]
 
 
 let home_page = ` <div class="kep_felsorolas" onclick="house_load()">
@@ -33,7 +40,7 @@ let register_page = `<div id="login_div">
     <input type="text">
 </div>`;
 let profile_page = ``;
-let house_page = `<h2>${hazak[0].nev}</h2> <div></div>
+let house_page = `<h2>${hazak[0].nev}<div id="price">${hazak[0].ar} Ft/éjszaka</div></h2> 
         <img src="${hazak[0].kep}" alt="1">
         <div id="textbox">${hazak[0].szoveg}</div>`
 const main = document.getElementById("main")
