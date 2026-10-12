@@ -40,7 +40,8 @@ body {
     }
 .kep_felsorolas img{
     height: 20rem;
-    max-width: 100%;
+    max-width: 100%; /*nem biztos, hogy kell tesa mesa*/
+    width: 90%
 }
 #login_div{
     text-align: center;
@@ -67,18 +68,46 @@ body {
     width: 8rem;
     color: black;
 }
-.kep_felsorolas img{
-    width: 90%
-}
 .szallas-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* Alapértelmezésben 3 oszlop egymás mellett */
-        gap: 2rem; /* Térköz az elemek között */
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
     }
-
-    /* Ha a képernyő keskenyebb, mint 768px (pl. mobiltelefon), akkor csak 1 oszlop legyen */
     @media (max-width: 768px) {
         .szallas-grid {
             grid-template-columns: 1rem;
         }
     }
+
+.register_btn_2{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.register_btn :hover{
+    color: #266783 !important; 
+    transition: color 0.3s ease;
+}
+
+footer{
+    position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  background: #F4A340;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+@media (max-width: 480px) {
+  footer {
+    left: 50%;                 
+    transform: translateX(-50%);
+    bottom: 10px;
+    text-align: center;
+    white-space: nowrap;
+  }}
+
+.login_btn{
+    border-radius: 50px;
+    background-color:#FFF6E9;
+    width: 8rem;
+    color: black;
+}
