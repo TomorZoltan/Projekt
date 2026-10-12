@@ -47,13 +47,13 @@ let home_page = ` <div class="szallas-grid">
     <!-- 2. elem -->
     <div class="kep_felsorolas" onclick="house_load(this)" id="1">
         <h3>Balaton-parti faház</h3>
-        <!-- <img src="./kepek/masodik szallas/haloszoba.png" alt="Balaton-parti faház" style="width: 100%; height: auto;"> -->
+        <img src="./kepek/masodik szallas/egeszhaz.png" alt="Balaton-parti faház" style="width: 100%; height: auto;">
     </div>
     
     <!-- 3. elem -->
     <div class="kep_felsorolas" onclick="house_load(this)" id="2">
         <h3>Noszvaji hegyvidéki házikó</h3>
-        <!-- <img src="./kepek/harmadik szallas/haloszoba.png" alt="Noszvaji hegyvidéki házikó" style="width: 100%; height: auto;"> -->
+        <!-- <img src="./kepek/harmadik szallas/teljeshaz.png" alt="Noszvaji hegyvidéki házikó" style="width: 100%; height: auto;"> -->
     </div>
     
     <!-- 4. elem -->
