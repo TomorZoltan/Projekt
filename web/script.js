@@ -41,7 +41,7 @@ let home_page = ` <div class="szallas-grid">
     <!-- 1. elem -->
     <div class="kep_felsorolas" onclick="house_load(this)" id="0">
         <h3>Panorámás Apartman (Horvátország)</h3>
-        <img src="./kepek/elso szallas/haz.png" alt="Panorámás Apartman" style="width: 100%; height: auto;">
+        <img src="./kepek/elso szallas/Modern tengerparti otthon panorámás kilátással.png" alt="Panorámás Apartman" style="width: 100%; height: auto;">
     </div>
     
     <!-- 2. elem -->
