@@ -105,9 +105,17 @@ footer{
     white-space: nowrap;
   }}
 
-.login_btn{
+#login_btn{
     border-radius: 50px;
     background-color:#FFF6E9;
-    width: 8rem;
+    margin-left: 6.5rem;
+    margin-right: 1rem;
+    width: 7rem;
     color: black;
+    cursor: pointer;
+    
+}
+#error{
+    color: red;
+    visibility: hidden;
 }

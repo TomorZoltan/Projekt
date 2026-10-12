@@ -77,16 +77,20 @@ let login_page = `<div id="login_div">
     <p>Név</p>
     <input type="text">
     <p>Jelszó</p>
-    <input type="text">
-    <p class="login_btn">Bejelentkezés</p>
+    <input type="password">
+    <p onclick="login()" id="login_btn">Bejelentkezés</p>
     <p class="register_btn">Nincs még fiókja? <a onclick="register_load()" class="register_btn_2">Regisztráljon</a></p>
 </div>`;
 let register_page = `<div id="login_div">
     <h2>Regisztráció</h2>
     <p>Név</p>
-    <input type="text">
+    <input type="text" id="name">
     <p>Jelszó</p>
-    <input type="text">
+    <input type="password" id="password">
+    <p>Jelszó újra</p>
+    <input type="password" id="password_again">
+    <p id="error">A két jelszó nem egyezik</p>
+    <p onclick="register()" id="login_btn">Regisztráció</p>
 </div>`;
 let profile_page = ``;
 const main = document.getElementById("main")
@@ -108,3 +112,41 @@ function register_load() {
     main.innerHTML = register_page;
 
 }
+
+//Regiszráció
+let jelszo;
+let nev;
+let profile = "";
+function login(){
+    console.log("TODO")
+}
+function register(){
+    const j = document.getElementById("password")
+    if (j.value == document.getElementById("password_again").value) {
+        jelszo = j.value;
+        nev = document.getElementById("name").value;
+        console.log(jelszo)
+    }
+    else{
+        document.getElementById("error").style = "visibility: visible";
+    }
+    const new_profile = {
+        name: nev,
+        password: jelszo
+    }
+    profile += JSON.stringify(new_profile)
+    profile += ","
+
+    console.log(profile)
+
+}
+
+//const jsonString = JSON.stringify(scrapedData, null, 2);
+/*fs.writeFile('output.json', jsonString, 'utf8', (err) => {
+  if (err) {
+    console.error('❌ Error writing file:', err);
+  } else {
+    console.log('✅ Data successfully saved to output.json!');
+  }
+});
+*/
