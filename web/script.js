@@ -41,13 +41,13 @@ let home_page = ` <div class="szallas-grid">
     <!-- 1. elem -->
     <div class="kep_felsorolas" onclick="house_load(this)" id="0">
         <h3>Panorámás Apartman (Horvátország)</h3>
-        <img src="./kepek/elso szallas/Modern tengerparti otthon panorámás kilátással.png" alt="Panorámás Apartman" style="width: 100%; height: auto;">
+       <!--  <img src="./kepek/elso szallas/Modern tengerparti otthon panorámás kilátással.png" alt="Panorámás Apartman" style="width: 100%; height: auto;"> -->
     </div>
     
     <!-- 2. elem -->
     <div class="kep_felsorolas" onclick="house_load(this)" id="1">
         <h3>Balaton-parti faház</h3>
-        <img src="./kepek/masodik szallas/egeszhaz.png" alt="Balaton-parti faház" style="width: 100%; height: auto;">
+       <!--  <img src="./kepek/masodik szallas/egeszhaz.png" alt="Balaton-parti faház" style="width: 100%; height: auto;"> -->
     </div>
     
     <!-- 3. elem -->
@@ -59,13 +59,13 @@ let home_page = ` <div class="szallas-grid">
     <!-- 4. elem -->
     <div class="kep_felsorolas" onclick="house_load(this)" id="3">
         <h3>Őrségi faház a természet ölelésében</h3>
-        <!-- <img src="./kepek/negyedik szallas/haloszoba.png" alt="Őrségi faház" style="width: 100%; height: auto;"> -->
+        <!-- <img src="./kepek/negyedik szallas/teljes.png" alt="Őrségi faház" style="width: 100%; height: auto;"> -->
     </div>
     
     <!-- 5. elem -->
     <div class="kep_felsorolas" onclick="house_load(this)" id="4">
         <h3>Pécsi belvárosi apartman</h3>
-        <!-- <img src="./kepek/otodik szallas/halo.png" alt="Pécsi belvárosi apartman" style="width: 100%; height: auto;"> -->
+        <!-- <img src="./kepek/otodik szallas/utcai_kep.png" alt="Pécsi belvárosi apartman" style="width: 100%; height: auto;"> -->
     </div>
 </div>
     
