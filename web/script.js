@@ -75,9 +75,9 @@ let home_page = ` <div class="szallas-grid">
 let login_page = `<div id="login_div">
     <h2>Bejelentkezés</h2>
     <p>Név</p>
-    <input type="text">
+    <input type="text" id="login_name">
     <p>Jelszó</p>
-    <input type="password">
+    <input type="password" id="login_password">
     <p onclick="login()" id="login_btn">Bejelentkezés</p>
     <p class="register_btn">Nincs még fiókja? <a onclick="register_load()" class="register_btn_2">Regisztráljon</a></p>
 </div>`;
@@ -116,10 +116,24 @@ function register_load() {
 //Regiszráció
 let jelszo;
 let nev;
-let profile = "";
-function login(){
-    console.log("TODO")
+let profile = [];
+/*function login_check(name) {
+    console.log(document.getElementById("login_name").value)
+    return name = document.getElementById("login_name").value;
 }
+function login(){
+     let login_index = profile.findIndex(login_check())
+     if (login_index == -1) {
+        console.log("HIBA")
+     }
+     else if (document.getElementById("login_password").value == profile[login_index].password) {
+         document.getElementById("felhasznalo_profil").innerHTML = profile[login_index].name
+        }
+        else{
+         console.log(profile[login_index].name)
+         console.log(document.getElementById("login_password").value)
+     }
+}*/
 function register(){
     const j = document.getElementById("password")
     if (j.value == document.getElementById("password_again").value) {
@@ -134,19 +148,6 @@ function register(){
         name: nev,
         password: jelszo
     }
-    profile += JSON.stringify(new_profile)
-    profile += ","
-
-    console.log(profile)
+    profile.push(new_profile)
 
 }
-
-//const jsonString = JSON.stringify(scrapedData, null, 2);
-/*fs.writeFile('output.json', jsonString, 'utf8', (err) => {
-  if (err) {
-    console.error('❌ Error writing file:', err);
-  } else {
-    console.log('✅ Data successfully saved to output.json!');
-  }
-});
-*/
