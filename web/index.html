@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="hatter.css">
     <title>Szálláska</title>
 </head>
-<body onload="main_load()">
+<body>
    
     <center><header class="header">
-       <img class="logo" src="./kepek/favicon.png" alt="Szálláska logója" onclick="main_load()">
-       <p id="felhasznalo_profil" onclick="login_load()">Bejelentkezés</p>
-        <h1 class="header-h1", onclick="main_load()">Szálláska</h1>
+       <img class="logo" src="./kepek/favicon.png" id="logo" alt="Szálláska logója">
+       <p id="felhasznalo_profil">Bejelentkezés</p>
+        <h1 class="header-h1", id="header-h1">Szálláska</h1>
     </header></center>
     <main id="main">
         
@@ -22,6 +22,6 @@
         <br>
         <p>A képek mestersége intelegenciával készültek</p>
     </footer>
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
