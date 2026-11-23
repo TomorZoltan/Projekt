@@ -6,6 +6,7 @@ const main = document.getElementById("main")
 
 window.addEventListener("load", ()=>{
     main_load();
+    
 })
 
 document.getElementById("logo").addEventListener("click", ()=>{
@@ -32,19 +33,29 @@ const regisztralas = () =>{
     login()
 })*/
 
+const load_houses = () => {
+    for (let i = 0; i < hazak.length; i++) {
+        const element = document.getElementById(i.toString());
+        if (element) {
+            element.addEventListener("click", () => house_load(i));
+        }
+    }
+};
+
 
 function main_load() {
     main.innerHTML = home_page;
+    load_houses();
 }
 
 function login_load() {
     main.innerHTML = login_page;
 }
-function house_load(object) {
 
-    main.innerHTML = `<h2>${hazak[object.id].nev}<div id="price">${hazak[object.id].ar} Ft/éjszaka</div></h2> 
-        <img src="${hazak[object.id].kep}" alt="1">
-        <div id="textbox">${hazak[object.id].szoveg}</div>`;
+function house_load(object) {
+    main.innerHTML = `<h2>${hazak[object].nev}<div id="price">${hazak[object].ar} Ft/éjszaka</div></h2> 
+        <img src="${hazak[object].kep}" alt="1">
+        <div id="textbox">${hazak[object].szoveg}</div>`;
 }
 function register_load() {
     main.innerHTML = register_page;
